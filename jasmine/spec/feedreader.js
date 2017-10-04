@@ -26,18 +26,19 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-
-        /* Loop through the allFeeds object and ensures it has a URL defined
-         * and that the URL is not empty.
+        /* Feeds in the allFeeds object have a URL defined
+         * that is not empty.
          */
-        it('feed objects have URL properties', function () {
+        it('feed objects have a URL property', function () {
             allFeeds.map(feed => { expect(feed.url).toBeDefined()} )
         });
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a name defined
-         * and that the name is not empty.
+        /* Feeds in the allFeeds object have a name defined
+         *that is not empty.
          */
+        it('feed objects have a name property', function () {
+            allFeeds.map(feed => { expect(feed.name).toBeDefined()} )
+        });
     });
 
 

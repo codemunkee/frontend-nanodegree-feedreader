@@ -20,8 +20,6 @@ var allFeeds = [
     }, {
         name: 'Linear Digressions',
         url: 'http://feeds.feedburner.com/udacity-linear-digressions'
-    }, {
-        url: 'Russ'
     }
 ];
 
