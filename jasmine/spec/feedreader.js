@@ -27,11 +27,12 @@ $(function() {
         });
 
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a URL defined
+        /* Loop through the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-
+        it('feed objects have URL properties', function () {
+            allFeeds.map(feed => { expect(feed.url).toBeDefined()} )
+        });
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
