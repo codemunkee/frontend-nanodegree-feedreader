@@ -64,10 +64,23 @@ $(function() {
 
     });
 
-        /* TODO: Write a new test suite named "New Feed Selection" */
+    describe('New Feed Selection', function () {
+        // make sure that we allow the async request to complete
+        // that initially populates the feed data on the page
+        let origHref;
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
+        beforeEach(function(done) {
+            loadFeed(0, done);
+            // first link we see in the article list
+            origHref = $('a.entry-link')[0].href;
+        });
+
+        it('shows new feed data when requested', function (done) {
+            loadFeed(1, function() {
+                const newHref = $('a.entry-link')[0].href;
+                expect(origHref !== newHref).toBe(true);
+                done();
+            });
+        });
+    });
 }());

@@ -39,10 +39,10 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 - [x] Write a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display when clicked and does it hide when clicked again.
 - [x] Write a test suite named `"Initial Entries"`.
 - [x] Write a test that ensures when the `loadFeed` function is called and completes its work, there is at least a single `.entry` element within the `.feed` container.
-- [ ] Write a test suite named `"New Feed Selection"`.
-- [ ] Write a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
-- [ ] No test should be dependent on the results of another.
-- [ ] Callbacks should be used to ensure that feeds are loaded before they are tested.
+- [x] Write a test suite named `"New Feed Selection"`.
+- [x] Write a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
+- [x] No test should be dependent on the results of another.
+- [x] Callbacks should be used to ensure that feeds are loaded before they are tested.
 - [ ] Implement error handling for undefined variables and out-of-bound array access.
 - [ ] When complete - all of your tests should pass.
 - [ ] Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
