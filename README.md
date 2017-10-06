@@ -12,7 +12,7 @@ Whether you work in an organization that uses test-driven development or in an o
 
 Viewing the results of the tests is as simple as loading the project's index.html file in your browser. Doing so automatically runs the tests defined in `jasmine/spec/feedreader.js`.
 
-If you want to see the current out of the tests you can go here: https://codemunkee.github.io/frontend-nanodegree-feedreader/.
+If you want to see the current output of the tests you can go here: https://codemunkee.github.io/frontend-nanodegree-feedreader/.
 
 We check for a few things:
 
