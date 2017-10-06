@@ -19,6 +19,6 @@ We check for a few things:
 - RSS Feeds are defined correctly
 - The Menu functionality (it's hidden by default and shows up when clicked)
 - Feeds show up when the page loads
-- We can see new feed data when requested.
+- We can see new feed data when requested
 
-Testing is fun.
+Testing is fun!
