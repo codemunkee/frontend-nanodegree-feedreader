@@ -1,6 +1,6 @@
 # Project Overview
 
-This project exists to demonstrates some common unit tests written with the [Jasmine](https://jasmine.github.io/) library.
+This project exists to demonstrate some common unit tests written with the [Jasmine](https://jasmine.github.io/) library.
 
 ## Why this Project?
 
