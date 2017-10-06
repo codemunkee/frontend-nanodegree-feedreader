@@ -69,15 +69,17 @@ $(function() {
         let origHref;
 
         beforeEach(function(done) {
-            loadFeed(0, done);
-            // first link we see in the article list
-            origHref = $('a.entry-link')[0].href;
+            loadFeed(0, function () {
+                // first link we see in the article list
+                origHref = $('a.entry-link')[0].href;
+                done();
+            });
         });
 
         it('shows new feed data when requested', function (done) {
             loadFeed(1, function() {
                 const newHref = $('a.entry-link')[0].href;
-                expect(origHref !== newHref).toBe(true);
+                expect(origHref).not.toBe(newHref);
                 done();
             });
         });
