@@ -14,14 +14,14 @@ $(function() {
          * that is not empty.
          */
         it('feed objects have a URL property', function () {
-            allFeeds.map(feed => { expect(feed.url).toBeDefined()} )
+            allFeeds.map(feed => { expect(feed.url).toBeDefined(); } );
         });
 
         /* Feeds in the allFeeds object have a name defined
          *that is not empty.
          */
         it('feed objects have a name property', function () {
-            allFeeds.map(feed => { expect(feed.name).toBeDefined()} )
+            allFeeds.map(feed => { expect(feed.name).toBeDefined(); } );
         });
     });
 
