@@ -29,15 +29,6 @@ $(function() {
 
     /* Test our hidden menu works as it should */
     describe('The menu', function() {
-        // fixtures make sure we set our menu state back to its original state
-        beforeEach(function() {
-            $('body').addClass('menu-hidden');
-        });
-
-        afterEach(function() {
-            $('body').addClass('menu-hidden');
-        });
-
         /* make sure the side menu is hidden by default */
         it('is hidden by default', function () {
             expect($('body').hasClass('menu-hidden')).toBe(true);
@@ -47,6 +38,12 @@ $(function() {
         it('is shown when icon is clicked', function () {
             $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(false);
+        });
+
+        /* the menu should disappear when clicked for a second time */
+        it('is hidden when clicked for the second time', function () {
+            $('.menu-icon-link').click();
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
     });
 
